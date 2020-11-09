@@ -1,0 +1,64 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  border-radius: $br-md;
+  font-size: 12px;
+  padding: 14px;
+  position: relative;
+  font-weight: 500;
+  font-family: $font-primary;
+  min-height: 44px;
+  min-width: 146px;
+  background-color: transparent;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: $trns-duration ease;
+
+  &.sm {
+    min-width: 122px;
+    min-height: 36px;
+    padding: 9px;
+  }
+
+  &.fs-base {
+    font-size: $base-font-size;
+  }
+
+  &.primary {
+    background-color: $color-primary;
+    color: $color-dark;
+
+    &:hover, &:focus, &:active {
+      border-color: lighten($color-primary, 8%);
+      background-color: lighten($color-primary, 8%);
+    }
+  }
+
+  &.bordered {
+    &:hover, &:focus, &:active {
+      color: $color-dark;
+      border-color: lighten($color-primary, 8%);
+      background-color: lighten($color-primary, 8%);
+    }
+  }
+
+  &.grey {
+    background-color: $color-grey;
+    border-color: $color-grey;
+    color: #999999;
+
+    &:hover, &:focus, &:active {
+      border-color: lighten($color-grey, 8%);
+      background-color: lighten($color-grey, 8%);
+    }
+  }
+
+  .icon-play {
+    font-size: 24px;
+    line-height: 0;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+}

@@ -1,0 +1,8 @@
+.grid-container {
+  display: grid;
+  grid-gap: $grid-gap;
+}
+
+.grid-columns-4 {
+  grid-template-columns: auto auto auto auto;
+}

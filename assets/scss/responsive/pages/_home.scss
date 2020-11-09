@@ -1,0 +1,12 @@
+@media (max-width: $screen-md-max) {
+  .info-box {
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .info-box {
+    text-align: center;
+  }
+}

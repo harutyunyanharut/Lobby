@@ -1,0 +1,23 @@
+@each $key, $val in $heading-font-sizes {
+    #{$key},.#{$key} {
+        font-size: #{$val};
+        font-weight: map-get($font-weights, bold);
+    }
+}
+
+.h1, h1, .h2, h2 {
+    line-height: 1;
+    letter-spacing: 1.28px;
+}
+
+@each $key, $val in $text-font-sizes {
+    .fs-#{$key} {
+        font-size: #{$val};
+    }
+}
+
+@each $key, $val in $font-weights {
+    .fw-#{$key} {
+        font-weight: #{$val};
+    }
+}

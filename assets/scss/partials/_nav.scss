@@ -1,0 +1,71 @@
+.nav-menu {
+  z-index: 9;
+  width: $nav-width;
+  background-color: $color-dark;
+  @extend %shadow;
+  @include position($position: fixed, $top: 0, $left: 0, $bottom: 0);
+
+  .nav-menu-btn {
+    font-size: 24px;
+    padding: 5px;
+    margin-top: 23px;
+    display: block;
+    cursor: pointer;
+    transition: $trns-duration ease;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+      color: $color-lightest;
+    }
+
+    i {
+      display: block;
+    }
+  }
+
+  & ~ main {
+    padding-left: $nav-width;
+  }
+
+  .nav-links {
+    max-height: 100%;
+    overflow-x: auto;
+    padding-left: map-get($spaces, 2);
+    padding-right: map-get($spaces, 2);
+
+    &> li {
+      margin-bottom: map-get($spaces, 2);
+    }
+  }
+}
+
+.nav-content {
+  padding-top: 95px;
+  @include position($top: 0, $left: 0, $right: 0, $bottom: 0);
+}
+
+.nav-link {
+  box-shadow: 0 1px 0 $color-dark;
+  border-radius: 8px;
+  background-color: #262626;
+  display: block;
+  transition: $trns-duration ease;
+  cursor: pointer;
+  padding: 11px;
+  text-align: center;
+
+  &:hover {
+    background-color: $color-grey;
+    color: $color-primary;
+  }
+
+  &.active {
+    color: $color-primary;
+  }
+
+  i {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,38 @@
+@media (max-width: $screen-xs-max) {
+  .button-dropdown {
+    display: block;
+  }
+
+  .tabs-list {
+    display: none;
+    border-bottom-left-radius: $br-md;
+    border-bottom-right-radius: $br-md;
+    background-color: $color-grey;
+    overflow: hidden;
+    width: 200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    @include position($top: 100%, $right: 0, $left: 0);
+
+    & > li {
+      width: 100%;
+    }
+  }
+
+  &.open {
+    .button-dropdown {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      background-color: $color-gray;
+      transition: 0s ease;
+
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+    .tabs-list {
+      display: block;
+    }
+  }
+}

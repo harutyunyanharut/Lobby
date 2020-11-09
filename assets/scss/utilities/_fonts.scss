@@ -1,0 +1,15 @@
+//icomoon-code-review
+@include font-face('lobby_icomoon/icomoon', $font-icons, normal, 400, $woff2: false);
+
+//Roboto regular
+@include font-face('roboto/regular/roboto-v20-latin-regular', 'Roboto', normal, 400);
+
+//Roboto medium
+@include font-face('roboto/medium/roboto-v20-latin-500', 'Roboto', normal, 500);
+
+//Roboto bold
+@include font-face('roboto/bold/roboto-v20-latin-700', 'Roboto', normal, 700, $unicode-range: (U+000-5FF));
+
+
+//Cairo Arabic regular
+@include font-face('cairo-arabic/cairo-v9-latin-regular', 'Cairo', normal, 400, $unicode-range: (0600–06FF));

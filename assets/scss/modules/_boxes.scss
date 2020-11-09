@@ -1,0 +1,45 @@
+.box {
+  background-color: $color-gray;
+  border-radius: $br-md;
+  @extend %shadow;
+  padding: 16px 12px 28px 12px;
+  text-align: center;
+
+  .box-logo {
+    display: block;
+
+    img {
+      max-width: 80px;
+    }
+  }
+
+  .btn {
+    border-radius: $br-lg;
+  }
+
+  .box-animation {
+    height: 148px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    position: relative;
+    display: block;
+
+    &:after {
+      content: '';
+      width: 110px;
+      height: 12px;
+      opacity: 0.4;
+      filter: blur(3px);
+      transform: translateX(-50%);
+      @include position($bottom: 0, $left: 50%);
+      @include bg-img($image: "bg/ellipse.svg", $repeat: no-repeat, $position: center, $size: 100%);
+    }
+
+    &.sm-ellipse {
+      &:after {
+        width: 72px;
+      }
+    }
+  }
+}

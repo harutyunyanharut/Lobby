@@ -1,0 +1,17 @@
+@media (max-width: $screen-sm-max) {
+  .grid-columns-4 {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .grid-columns-4 {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: $screen-xxs-max) {
+  .grid-columns-4 {
+    grid-template-columns: auto;
+  }
+}

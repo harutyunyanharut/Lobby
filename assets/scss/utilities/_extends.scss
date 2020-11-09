@@ -1,0 +1,23 @@
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%shadow {
+  box-shadow: 0 6px 12px $color-shadow;
+}
+
+%link {
+  transition: $trns-duration ease;
+  color: $color-link;
+
+  &:hover {
+    color: $color-light;
+  }
+}
+
+%animated {
+  animation-duration: $trns-duration;
+  animation-fill-mode: both;
+}

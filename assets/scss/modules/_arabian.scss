@@ -1,0 +1,53 @@
+[dir="rtl"] {
+  .header-buttons-list {
+    &> li {
+      &:first-child {
+        margin-left: map-get($spaces, 2);
+      }
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .nav-menu {
+    right: 0;
+    left: initial;
+
+    & ~ main {
+      padding-left: 0;
+      padding-right: $nav-width;
+    }
+  }
+
+  header {
+    padding-left: 0;
+    padding-right: $nav-width;
+  }
+
+  @media (min-width: $screen-sm) {
+    .header-nav-list {
+      & > li {
+        &:first-child {
+          margin-left: map-get($spaces, 8);
+        }
+
+        &:last-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    header {
+      padding-right: $nav-width-sm;
+    }
+
+    .nav-menu {
+      & ~ main {
+        padding-right: $nav-width-sm;
+      }
+    }
+  }
+}

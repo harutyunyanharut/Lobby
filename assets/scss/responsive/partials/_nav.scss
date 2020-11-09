@@ -1,0 +1,38 @@
+@media (max-width: $screen-sm-max) {
+  .nav-menu {
+    width: $nav-width-sm;
+
+    & ~ main {
+      padding-left: $nav-width-sm;
+    }
+    .nav-links {
+      padding-left: map-get($spaces, 1);
+      padding-right: map-get($spaces, 1);
+
+      &> li {
+        margin-bottom: map-get($spaces, 1);
+      }
+    }
+  }
+
+  .nav-content {
+    padding-top: 80px;
+  }
+
+  .nav-link {
+    padding: 5px;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .nav-menu {
+    .nav-menu-btn {
+      font-size: 18px;
+      margin-top: 13px;
+    }
+  }
+
+  .nav-content {
+    padding-top: 55px;
+  }
+}

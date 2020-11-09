@@ -1,0 +1,70 @@
+//paths
+$fonts-folder: "../fonts";
+$images-folder: '../img/';
+
+//fonts
+$font-primary: "Roboto", "Cairo",  serif;
+$font-secondary: "Times New Roman", serif;
+$font-icons: "icomoon";
+
+//color usage
+$color-primary: #FFB700;
+$color-highlight: #2B2B2B;
+$color-warning: #e44c23;
+
+//Descriptive Base Colors
+$color-text: #CCCCCC;
+$color-dark: #1A1A1A;
+$color-gray: #414141;
+$color-grey: #333333;
+$color-lightest: #ffffff;
+$color-light: rgba($color-lightest, 0.58);
+$color-link: #808080;
+$color-shadow: rgba(0,0,0, 0.16);
+
+//Base Font-sizes
+$base-font-size: 14px;
+$font-coefficient: 1.05;
+
+// Font-sizes
+$fs-sm: 0.857em; //12px
+$fs-lg: 1.428em; //20px
+$fs-xl: 2.285em; //32px
+
+// Heading sizes
+$h3: 1.5em; //21px
+$h2: 2em; //28px
+$h1: 2.285em; //32px
+
+//Border Radiuses
+$br-md: 18px;
+$br-lg: 22px;
+$br-rounded: 50%;
+$br-none: 0;
+
+// Transitions
+$trns-duration: .2s;
+$trns-delay: 50ms;
+
+//container
+$cont-width: 1456px;
+$cont-padding: 48px;
+
+//grid
+$grid-gap: 8px;
+
+//Resolutions
+$screen-lg: 1280px;
+$screen-md: 1024px;
+$screen-sm: 768px;
+$screen-xs: 480px;
+$screen-xxs: 360px;
+
+$screen-md-max: ($screen-lg - 1); //1279px
+$screen-sm-max: ($screen-md - 1); //1023px
+$screen-xs-max: ($screen-sm - 1); //767px
+$screen-xxs-max: ($screen-xs - 1); //479px
+
+//main
+$nav-width: 64px;
+$nav-width-sm: 48px;
